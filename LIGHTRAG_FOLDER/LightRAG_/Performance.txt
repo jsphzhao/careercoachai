@@ -1,0 +1,5 @@
+Speed to output:
+- Global 
+> Average: 41.6 seconds per response
+- Hybrid 
+> Average: 

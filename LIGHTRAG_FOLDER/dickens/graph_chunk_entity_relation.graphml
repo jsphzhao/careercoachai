@@ -1,0 +1,1173 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;RESIDENTIAL LANDLORD AND TENANT ORDINANCE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The Residential Landlord and Tenant Ordinance is a legal framework established to define the rights and obligations of landlords and tenants in the rental of dwelling units within the City of Chicago."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;CITY OF CHICAGO&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"City of Chicago is a geographic location mentioned in relation to code violations and tenant-landlord obligations."&lt;SEP&gt;"The City of Chicago is a geographic location that serves as the context for the rental agreements and associated landlord-tenant regulations."&lt;SEP&gt;"The City of Chicago is a geographical location and political entity with specific public policies regarding landlord-tenant relationships."&lt;SEP&gt;"The City of Chicago is a location where the Residential Landlord and Tenant Ordinance governs the rental agreements and outlines the rights and responsibilities of landlords and tenants."&lt;SEP&gt;"The City of Chicago is the governing body that establishes ordinances related to landlord and tenant rights, including safety regulations and rental agreements."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;CHICAGO HOUSING AUTHORITY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Chicago Housing Authority is an organization that operates housing programs under subsidy from the United States and the State of Illinois, ensuring compliance with housing regulations."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;ILLINOIS HOUSING DEVELOPMENT AUTHORITY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Illinois Housing Development Authority is an organization involved in housing programs that receive subsidies and are subject to the Residential Landlord and Tenant Ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;RENTAL AGREEMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Rental Agreement is a formal contract between landlord and tenant outlining the terms of rental occupancy, rights, and responsibilities."&lt;SEP&gt;"A Rental Agreement is a legal contract between a landlord and tenant outlining terms and obligations, including security deposits."&lt;SEP&gt;"A Rental Agreement is a legal contract between the landlord and the tenant outlining the terms of occupancy, rights, and responsibilities."&lt;SEP&gt;"A rental agreement is a contract between a landlord and a tenant that outlines the terms of renting a property, including rights and responsibilities."&lt;SEP&gt;"A rental agreement is a contract between landlords and tenants that outlines the terms of rental for dwelling units, regulated under the Residential Landlord and Tenant Ordinance."&lt;SEP&gt;"A rental agreement is a legal document outlining the terms and conditions of a tenancy between a landlord and tenant."&lt;SEP&gt;"A rental agreement is a legally binding contract between the landlord and tenant detailing the terms of the rental arrangement."&lt;SEP&gt;"Rental Agreement is an all-encompassing term for any formal or informal contract setting the terms for occupancy of a dwelling unit by a tenant."&lt;SEP&gt;"The Rental Agreement is a legal contract between landlord and tenant that outlines the terms of tenancy, including rent obligations and conditions for termination."&lt;SEP&gt;"The Rental Agreement is a legal contract between the Tenant and Landlord outlining the terms of occupancy and mutual responsibilities."&lt;SEP&gt;"The Rental Agreement refers to the contract between the landlord and tenant that outlines the terms and conditions of rental, including obligations and rights."&lt;SEP&gt;"The rental agreement is a legal contract between the tenant and landlord outlining the terms and conditions of the tenancy."&lt;SEP&gt;"The rental agreement is a legal contract outlining the rights and responsibilities of both landlords and tenants regarding the rental of a dwelling."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;TENANT&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A tenant is an individual or entity that occupies a rental unit and holds specific rights and responsibilities regulated by the Residential Landlord and Tenant Ordinance."&lt;SEP&gt;"A tenant is an individual or party who rents property from a landlord, holding specific rights and obligations under rental agreements and applicable ordinances."&lt;SEP&gt;"A tenant is an individual who occupies a dwelling unit under a rental agreement and has rights to peaceful enjoyment and privacy."&lt;SEP&gt;"A tenant is an individual who rents a property from a landlord, protected by laws governing rental agreements and security deposits."&lt;SEP&gt;"A tenant is an individual who rents or leases property from a landlord and has rights protected under the public policy of the City of Chicago."&lt;SEP&gt;"Tenant refers to an individual who is legally entitled to occupy a dwelling unit, per an agreement with the landlord."&lt;SEP&gt;"The Tenant is an individual entering into a rental agreement who has specific rights and obligations under the law."&lt;SEP&gt;"The Tenant is an individual or party who occupies a dwelling unit, with rights and responsibilities related to the rental agreement."&lt;SEP&gt;"The Tenant is an individual who occupies a dwelling unit and has rights and responsibilities under a rental agreement."&lt;SEP&gt;"The Tenant is the individual who occupies the dwelling unit and has rights and responsibilities under the rental agreement."&lt;SEP&gt;"The Tenant is the individual who pays rent to the landlord and is entitled to receive notifications regarding security deposits."&lt;SEP&gt;"The tenant is an individual or group of individuals who occupy a dwelling unit under a rental agreement with the landlord and are subject to certain rights and obligations."&lt;SEP&gt;"The tenant is an individual residing in a rental property and is entitled to certain rights and protections under the rental agreement."&lt;SEP&gt;"The tenant is the individual renting the property from the landlord, responsible for adhering to the rental agreement terms and making timely rent payments."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;LANDLORD&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A landlord is a person or organization that owns a rental property and is responsible for the enforcement of terms in rental agreements and relevant ordinances."&lt;SEP&gt;"A landlord is an entity or individual who owns rental property and has obligations and rights under rental agreements, particularly regarding tenants' rights."&lt;SEP&gt;"A landlord is an individual or entity that owns a property and leases it to tenants, responsible for managing the rental agreement and handling security deposits."&lt;SEP&gt;"A landlord is an individual or entity that owns and rents out dwelling units, having defined rights and responsibilities under the Residential Landlord and Tenant Ordinance."&lt;SEP&gt;"A landlord is an individual or organization that rents out a dwelling unit to tenants and has certain rights and responsibilities regarding access and maintenance."&lt;SEP&gt;"Landlord is defined as the owner, agent, or other entities with rights to a dwelling unit or building, responsible for renting the space to tenants."&lt;SEP&gt;"The Landlord is a person or entity that owns rental properties and is obligated to disclose certain information to tenants."&lt;SEP&gt;"The Landlord is the individual or entity responsible for renting a dwelling unit to a tenant and is governed by the rental agreement."&lt;SEP&gt;"The Landlord is the individual who rents out property to tenants and is responsible for transferring security deposits and complying with notification requirements."&lt;SEP&gt;"The Landlord is the owner of the dwelling unit who is responsible for providing necessary services as agreed in the rental agreement."&lt;SEP&gt;"The Landlord is the owner of the property who has obligations to provide certain services and maintain the dwelling unit."&lt;SEP&gt;"The landlord is an entity that provides rental agreements and has rights and responsibilities concerning the management of dwellings that they rent out to tenants."&lt;SEP&gt;"The landlord is an individual or organization that owns the rental property and has rights and responsibilities defined by rental agreements and regulations."&lt;SEP&gt;"The landlord is the individual or entity who owns the rental property and is responsible for managing it, including re-renting and maintaining the property."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;OWNER-OCCUPIED PREMISES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Owner-occupied premises are dwelling units where the owner resides, but certain regulations still apply under the Residential Landlord and Tenant Ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;HOTELS, MOTELS, INNS, BED-AND-BREAKFASTS, ROOMINGHOUSES, BOARDINGHOUSES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"These are types of dwelling units excluded from some regulations of the Residential Landlord and Tenant Ordinance until certain conditions are met."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;FORECLOSURE ACTION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Foreclosure Action is a legal proceeding initiated against the landlord or owner pertaining to unpaid debts secured by property."&lt;SEP&gt;"Foreclosure action refers to legal proceedings that can affect tenants and their rights under rental agreements, as outlined in the ordinance."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;TENANT REMEDIES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Tenant Remedies refers to the legal options available to tenants in cases of landlord noncompliance with rental agreements or municipal codes."&lt;SEP&gt;"Tenant remedies describe the rights and actions available to tenants to address grievances regarding their rental situation, according to the ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;LANDLORD REMEDIES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Landlord remedies refer to the rights and actions available to landlords to address grievances concerning tenant behavior or obligations, as stated in the ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;SEVERABILITY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Severability refers to a provision in the ordinance that allows for certain clauses to remain enforceable even if other parts are found invalid."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;NOTICE OF CONDITIONS AFFECTING HABITABILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Notice of Conditions Affecting Habitability is a disclosure required before entering into or renewing a rental agreement informing tenants of specific issues affecting the property."&lt;SEP&gt;"Notice of conditions affecting habitability is a requirement for landlords to inform tenants of any issues that impact the livability of their dwelling unit."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;RETALIATORY CONDUCT BY LANDLORD&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Retaliatory conduct by landlords refers to actions taken against tenants for exercising their rights, which are prohibited under the ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;INTERRUPTION OF TENANT OCCUPANCY BY LANDLORD&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Interruption of tenant occupancy is prohibited by the ordinance, ensuring that landlords cannot unjustly evict or disturb their tenants."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;SECURITY DEPOSITS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Security Deposits are amounts of money taken by the landlord to cover potential damages, which are also returnable to the tenant under certain conditions."&lt;SEP&gt;"Security deposits are amounts of money collected from tenants to cover potential damages; regulations govern their interest rates and refunds."&lt;SEP&gt;"Security deposits are funds collected by landlords from tenants to cover potential damages, regulated under the Residential Landlord and Tenant Ordinance."&lt;SEP&gt;"Security deposits are funds held by the landlord as a form of financial security against damages or unpaid rent, which must be kept separate from the landlord's assets."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;INTEREST RATE ON SECURITY DEPOSITS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Interest rates on security deposits refer to regulations regarding how much interest must be paid to tenants on their deposited funds, which is outlined in the ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;BED BUGS EDUCATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Bed bugs education refers to the initiatives or requirements put in place to inform tenants and landlords about the management and prevention of bed bug infestations in rental units."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;SUMMARY OF ORDINANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A summary of the ordinance attached to rental agreements serves to inform both landlords and tenants of their rights and responsibilities as per the Residential Landlord and Tenant Ordinance."</data>
+      <data key="d2">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </node>
+    <node id="&quot;DWELLING UNIT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"A dwelling unit is a residential space that is rented out by the landlord to the tenant, and it becomes a focal point for various rights and responsibilities between the landlord and tenant."&lt;SEP&gt;"A dwelling unit is a residential space that is rented to tenants, typically defined in the rental agreement and subject to security deposit protections."&lt;SEP&gt;"A dwelling unit is a specific type of residential living space that is leased to the tenant under the rental agreement."&lt;SEP&gt;"Dwelling Unit refers to a structure or part of a structure used as a home by one or more persons, enabling them to maintain a household."&lt;SEP&gt;"The Dwelling Unit is the residential space that is rented by the Tenant from the Landlord, subject to the Rental Agreement."&lt;SEP&gt;"The dwelling unit refers to the specific residential space that the tenant occupies under the rental agreement."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;OWNER&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Owner refers to individuals or entities that hold legal title to property and have rights to its use and enjoyment, which may include ancillary rights like mortgages."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;PERIODIC TENANCY&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"A periodic tenancy is a type of rental agreement that automatically renews at specified intervals until terminated by either party."&lt;SEP&gt;"Periodic Tenancy is a type of rental arrangement that continues for successive periods until terminated by either the landlord or tenant."&lt;SEP&gt;"Periodic Tenancy refers to rental arrangements that renew automatically over a specified period until terminated by either party, usually week-to-week or month-to-month."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;PERSON&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Person is defined broadly to include individuals or various legal or commercial entities involved in agreements related to dwelling units."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;PREMISES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Premises encompass the dwelling unit and associated structures, facilities, and grounds available for tenant use."&lt;SEP&gt;"Premises refer to the physical property or location that is being rented or occupied by the tenant under the rental agreement."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;RENT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Rent refers to any consideration, payment, or benefits exchanged for the use or occupancy of a dwelling unit."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;SUCCESSOR LANDLORD&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A Successor Landlord is any new landlord who takes over the property, inheriting all obligations defined in rental agreements and laws."&lt;SEP&gt;"A successor landlord is a new landlord who takes over the property and assumes responsibility for any security deposits held by the previous landlord."&lt;SEP&gt;"Successor Landlord is defined as a person who takes over ownership or control of a dwelling unit from a previous landlord."&lt;SEP&gt;"The Successor Landlord is the entity that takes over responsibilities from the original Landlord, including managing the security deposit."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;MUNICIPAL CODE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Municipal Code refers to the set of laws and regulations governing local jurisdictions, including tenant rights and responsibilities associated with dwelling units."&lt;SEP&gt;"The municipal code refers to the set of laws and regulations governing local municipalities, relevant to landlord-tenant relationships."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;TENANT RESPONSIBILITIES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Tenant Responsibilities comprise the obligations tenants must comply with under local laws, concerning the maintenance and use of their dwelling units and surroundings."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;ASHES, RUBBISH, GARBAGE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Ashes, rubbish, and garbage refer to waste materials that tenants are responsible for disposing of in a clean and safe manner as part of their tenancy obligations."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;PLUMBING FIXTURES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Plumbing Fixtures are components within a dwelling unit that tenants are typically responsible for maintaining in cleanliness and good condition."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;ELECTRICAL, PLUMBING, AND HEATING FACILITIES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Electrical, plumbing, and heating facilities include the various systems within a dwelling unit that tenants are required to use reasonably and maintain."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;NEIGHBORS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Neighbors refer to other individuals occupying nearby premises, whose peaceful enjoyment may be affected by the tenant's conduct."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;LESSOR OR SUBLESSOR&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Lessor or Sublessor denotes individuals or entities that lease or sublease a dwelling unit to tenants, sharing similar responsibilities as the landlord."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;COURT ORDER&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Court Order is a legal directive issued by a court that may affect the status or responsibilities of landlords, tenants, or other related parties."</data>
+      <data key="d2">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </node>
+    <node id="&quot;ILLINOIS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Illinois is a U.S. state mentioned as the location where landlords must hold security deposits in federally insured interest-bearing accounts."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </node>
+    <node id="&quot;ACCESS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Access refers to the landlord's right to enter the premises for various reasons, such as repairs, inspections, or emergencies, under specified conditions."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </node>
+    <node id="&quot;REPAIRS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Repairs denote the actions taken by the landlord to maintain or fix the premises, which are part of the landlord's responsibilities."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </node>
+    <node id="&quot;DAMAGES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Damages are monetary compensation that may be required if a tenant or landlord fails to meet their obligations under the rental agreement."&lt;SEP&gt;"Damages refer to compensation that may be claimed by the Tenant in cases where the Landlord fails to fulfill their obligations under the rental agreement."&lt;SEP&gt;"Damages refer to financial compensation that tenants may claim if landlords fail to comply with legal rental requirements."&lt;SEP&gt;"Damages refer to monetary compensation that a tenant may recover if the landlord enforces a prohibited rental agreement provision."&lt;SEP&gt;"Damages refer to the compensation a tenant may be entitled to, particularly concerning deficient interest payments on the security deposit."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;INJUNCTIVE RELIEF&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Injunctive Relief is a legal remedy sought by the Tenant to compel the Landlord to comply with the rental agreement or to cease noncompliant actions."&lt;SEP&gt;"Injunctive Relief is a legal remedy that allows the landlord to obtain court orders to stop the tenant from violating specific provisions of the rental agreement."&lt;SEP&gt;"Injunctive relief refers to a legal remedy sought by the landlord or tenant to compel compliance with the rental agreement or prevent unlawful conduct."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;EMERGENCY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Emergency situations allow the landlord to enter the premises without prior notice, signifying a critical scenario that requires immediate attention."</data>
+      <data key="d2">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </node>
+    <node id="&quot;NOTICE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Notice pertains to the required communication from the landlord to the tenant regarding intended entry, usually given at least two days in advance."&lt;SEP&gt;"The notice is a written communication from the landlord to the tenant regarding changes in the rental agreement or termination of the tenancy."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </node>
+    <node id="&quot;SECURITY DEPOSIT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"A Security Deposit is a sum of money held by the landlord to cover potential damages or unpaid rent by the tenant."&lt;SEP&gt;"A Security Deposit is a sum of money paid by the tenant to the landlord as collateral against damage or unpaid rent, which must be managed and returned according to regulations."&lt;SEP&gt;"A security deposit is a sum of money held by the landlord as protection against potential damages or unpaid rent during the tenancy."&lt;SEP&gt;"A security deposit is a sum of money held by the landlord to cover potential damages or unpaid rent and must be returned if the rental agreement is terminated without fault from the tenant."&lt;SEP&gt;"The Security Deposit is a sum of money held by the Landlord at the beginning of the tenancy as a guarantee against potential damages caused by the Tenant."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;FINANCIAL INSTITUTION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A financial institution is a company that provides financial services, such as banks, which hold and manage security deposits."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </node>
+    <node id="&quot;SECURITY DEPOSIT RECEIPT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A security deposit receipt is a document provided by the landlord to the tenant acknowledging the receipt of the security deposit, including essential details such as amount, date, and the receiving agent's information."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </node>
+    <node id="&quot;TRANSFERRING SECURITY DEPOSIT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Transferring security deposit refers to the process where a landlord may change the financial institution holding the security deposit, and they must inform the tenant of this change in writing."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </node>
+    <node id="&quot;EXCESS INTEREST&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Excess interest is defined as the amount of money in a security deposit account that exceeds the total security deposits plus any interest due, indicating that the landlord is not commingling funds."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </node>
+    <node id="&quot;NOTICE OF TRANSFER&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Notice of transfer is the required notification that a successor landlord must send to the tenant informing them of the transfer of their security deposit to the new landlord."</data>
+      <data key="d2">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </node>
+    <node id="&quot;CITY COMPTROLLER&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The City Comptroller is responsible for reviewing interest rates on security deposits and announcing the rates each year."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;INTEREST RATE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The Interest Rate relates to the percentage of interest that landlords must pay on security deposits, as determined by the City Comptroller."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;MAYOR&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"The Mayor oversees the publication of information regarding security deposits and mandates actions related to tenant and landlord rights."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;TRANSFEROR&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"The Transferor is the original Landlord who retains joint liability for the security deposit until it is transferred to the Successor Landlord."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;COURT OF COMPETENT JURISDICTION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Court of Competent Jurisdiction is the legal body where tenants can challenge and claim damages regarding security deposit disputes."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;TEN DAYS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Ten Days refers to the period within which a Transferor must provide written notice after transferring the security deposit."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;THIRTY DAYS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Thirty Days is the timeframe within which a landlord must pay interest on a security deposit or prepaid rent to avoid penalties."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;FORTY-FIVE DAYS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Forty-Five Days is the duration in which the landlord must pay interest on certain types of prepaid rent to avoid incurring additional liabilities."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;INTEREST CALCULATION&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Interest Calculation refers to the process and criteria utilized to determine the correct interest amount owed to tenants on their security deposits."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;PAMPHLET OR BROCHURE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The Pamphlet or Brochure is a printed document intended for public distribution that explains the rights and responsibilities of landlords and tenants."</data>
+      <data key="d2">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </node>
+    <node id="&quot;COMMISSIONER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"The Commissioner is responsible for distributing information regarding security deposit interest rates and ensuring compliance with relevant regulations."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </node>
+    <node id="&quot;HISTORY OF RENTAL AGREEMENTS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"History of Rental Agreements encompasses the various rights, obligations, and remedies pertaining to the relationship between landlords and tenants over time."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </node>
+    <node id="&quot;PUBLIC SERVICE ANNOUNCEMENTS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Public Service Announcements are communications distributed through media outlets to inform the public about changes in security deposit interest rates."&lt;SEP&gt;"Public service announcements are communications distributed by the Commissioner of Housing to inform about important updates such as interest rates on security deposits."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;COURT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Court is a legal body where foreclosure actions are filed and litigated, impacting landlords and tenants."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </node>
+    <node id="&quot;CODE VIOLATIONS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Code Violations refer to breaches of building codes that require landlord disclosure to tenants regarding the condition of rental properties."&lt;SEP&gt;"Code violations refer to violations of building, housing, or health codes that landlords must adhere to, affecting tenant rights and safety."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;UTILITIES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Utilities encompass the essential services provided to properties, such as water, gas, and electricity, whose termination must be disclosed to tenants."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </node>
+    <node id="&quot;SECTION 5-12&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Section 5-12 refers to a part of the law that outlines tenant rights and obligations in the context of rental agreements and landlord responsibilities."</data>
+      <data key="d2">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </node>
+    <node id="&quot;WRITTEN NOTICE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Written Notice is a formal communication from the tenant to the landlord regarding any issues of compliance or safety related to the rental agreement."&lt;SEP&gt;"Written Notice is a formal communication required to be provided by the landlord or tenant regarding breaches or intentions related to the rental agreement."&lt;SEP&gt;"Written Notice is a formal communication that tenants must provide to landlords regarding the termination of rental agreements under specific conditions."&lt;SEP&gt;"Written Notice refers to formal communication that must be provided by either the Landlord or Tenant to address issues such as material noncompliance or termination of the rental agreement."&lt;SEP&gt;"Written notice is a formal communication from the landlord to the tenant regarding breaches of the rental agreement or other important issues."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;CHICAGO MUNICIPAL CODE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Chicago Municipal Code includes regulations and requirements that govern the responsibilities of landlords and tenants for rental agreements and property maintenance."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;SECTION 5-12-090&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Section 5-12-090 is a specific regulation that outlines tenant rights and remedies in cases of landlord noncompliance."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;SECTION 5-12-101&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Section 5-12-101 mandates that landlords provide information about bed bug prevention and treatment as part of the rental agreement process."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;SECTION 5-12-070&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Section 5-12-070 is a provision that details the obligations of the landlord towards the tenant, particularly regarding health and safety."&lt;SEP&gt;"Section 5-12-070 outlines landlord obligations for maintaining the habitability of dwelling units, which are crucial for tenant safety and health."&lt;SEP&gt;"Section 5-12-070 outlines specific regulations and obligations of the landlord concerning residential rental agreements and tenant rights."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;BED BUGS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Bed Bugs refers to the pest issue addressed in rental agreements, requiring landlords to educate tenants on prevention and treatment as per municipal code."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;INFORMATIONAL BROCHURE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Informational Brochure is a document prepared by the department of health that provides guidance on bed bug prevention and treatment for tenants."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;DEPARTMENT OF HEALTH&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Department of Health is responsible for creating educational materials regarding pest control and maintaining public health standards in rental properties."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;SECTION 7-28-860&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Section 7-28-860 mandates the creation of educational materials concerning bed bug prevention and treatment to be provided to tenants."</data>
+      <data key="d2">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;MATERIAL NONCOMPLIANCE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Material Noncompliance refers to significant failures by landlords to meet legal and rental agreement obligations, affecting tenant rights and living conditions."&lt;SEP&gt;"Material Noncompliance refers to significant failures by the landlord to adhere to the stipulations of the rental agreement, potentially leading to termination of the contract."&lt;SEP&gt;"Material Noncompliance refers to the landlord's failure to uphold specific terms of the rental agreement, impacting tenant health and safety."&lt;SEP&gt;"Material noncompliance refers to significant failures by the tenant to adhere to the rental agreement, which could lead to termination of the rental agreement."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;BUILDING CODE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Building codes are regulations set to ensure safety, health, and structural integrity of buildings, which landlords must comply with for rented properties."&lt;SEP&gt;"The Building Code encompasses regulations governing the construction, maintenance, and safety standards for structures, relevant to landlord duties."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </node>
+    <node id="&quot;POSSESSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Possession refers to the right of the tenant to occupy the dwelling unit and the landlord's obligation to deliver this right according to the rental agreement."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;ESSENTIAL SERVICES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Essential Services are utilities and amenities that the landlord is obliged to provide to maintain health and safety for the tenant, such as heat and running water."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;MATERIAL DEFECTS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Material Defects are significant issues in the rental property that affect its habitability and must be addressed by the Landlord."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </node>
+    <node id="&quot;EMERGENCY REPAIRS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Emergency Repairs are urgent fixes needed in the dwelling unit to ensure the health and safety of the Tenant, which require prompt attention from the Landlord."&lt;SEP&gt;"Emergency repairs are necessary fixes that require immediate attention to maintain safety and livability in the tenant’s unit."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;TENANT'S FAMILY&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Tenant's Family refers to individuals who reside with the Tenant in the dwelling unit and may impact the Tenant's rights under the rental agreement."&lt;SEP&gt;"Tenant's family refers to individuals related to or living with the tenant, who might affect the rental agreement's compliance status."</data>
+      <data key="d2">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;FIRE OR CASUALTY DAMAGE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Fire or Casualty Damage refers to incidents that affect the integrity of the dwelling unit, which may lead to termination of the rental agreement and other tenant remedies."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;HEAT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Heat refers to the essential utility service that the landlord is obligated to provide to ensure the tenant's comfort and safety."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;RUNNING WATER&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Running Water is a necessary utility required by the landlord that must be supplied for tenant health and sanitation."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;HOT WATER&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Hot Water is a utility service that landlords must provide for tenant comfort, particularly in terms of hygiene and living conditions."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;ELECTRICITY&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Electricity is an essential utility service that landlords are required to furnish as part of the rental agreement to maintain the living standards of tenants."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;GAS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Gas refers to a utility service that must be provided by the landlord for heating and cooking needs in the rental unit."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;PLUMBING&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Plumbing encompasses the water supply and drainage systems that the landlord must maintain as part of their obligations to the tenant."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;PREPAID RENT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Prepaid Rent refers to the money paid in advance by the tenant, which should be returned by the landlord in case of contract termination due to noncompliance."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;SUBSTITUTE HOUSING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Substitute Housing refers to alternative living arrangements that tenants may seek if the landlord fails to comply with the rental agreement conditions."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;TERMINATION OF RENTAL AGREEMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Termination of Rental Agreement is a legal act initiated by the tenant when the landlord fails to comply with their obligations."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;LAST KNOWN ADDRESS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Last Known Address refers to the most recent location where the landlord can be contacted for legal notices."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;24-HOUR NOTIFICATION PERIOD&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"24-Hour Notification Period is the timeframe within which the landlord is required to address tenant complaints regarding noncompliance or failures."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;72-HOUR TIME PERIOD&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"72-Hour Time Period refers to the duration after which a tenant may terminate the rental agreement if the landlord has not resolved noncompliance issues."</data>
+      <data key="d2">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </node>
+    <node id="&quot;ILLINOIS CODE OF CIVIL PROCEDURE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Illinois Code of Civil Procedure provides legal guidelines regarding the administration of civil proceedings in Illinois, including eviction processes."</data>
+      <data key="d2">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;FIRE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Fire refers to an occurrence that may result in the termination of the rental agreement based on damage occurring that affects the rental premises."</data>
+      <data key="d2">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;CASUALTY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Casualty indicates an unexpected incident that impacts the condition of the rental property and can lead to the termination of the rental agreement."</data>
+      <data key="d2">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;GOOD FAITH EFFORT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Good faith effort represents the landlord's obligation to attempt to re-rent the tenant's dwelling unit at a fair rental rate upon early termination of the rental agreement."</data>
+      <data key="d2">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;FAIR RENTAL&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Fair Rental is a term describing a reasonable rent amount for comparable dwelling units in the area, used in the context of re-renting after abandonment by the tenant."&lt;SEP&gt;"Fair rental refers to the comparable rent charged for similar dwelling units in the same neighborhood, used as a benchmark for re-renting."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </node>
+    <node id="&quot;ABANDONMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Abandonment refers to a situation where the tenant vacates the dwelling unit without the intention to return, prompting actions from the landlord regarding the property."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;SECTION 5-12-040(G)&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Section 5-12-040(g) refers to a specific provision within a legal context that addresses disturbances caused by tenants and outlines the landlord's rights for seeking injunctive relief."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;SECTION 5-12-130(A)&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Section 5-12-130(a) is a provision in the legal text that deals with the rights of landlords with respect to non-payment of rent and termination of rental agreements."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;ABANDONMENT CLAUSE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The Abandonment Clause defines the circumstances under which a dwelling unit may be deemed abandoned by the tenant, affecting the landlord's rights to the property."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;INJUNCTIVE RELIEF ACTION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"An Injunctive Relief Action refers to the legal steps taken by the landlord to seek a court order to prevent the tenant's violation of the agreement."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;ADVERTISING EXPENSES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Advertising Expenses refer to the costs that the landlord incurs when seeking to re-rent a dwelling unit after the tenant has abandoned it."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;REDECORATION COSTS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Redecoration Costs involve the expenses the landlord incurs for restoring the dwelling unit to a rentable condition after a tenant's abandonment."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;RESIDENTIAL TENANCY&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Residential Tenancy refers to the arrangement under which residential properties are rented, governed by the rental agreement and applicable laws."</data>
+      <data key="d2">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;TERMINATION DATE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Termination Date is the date specified in a rental agreement indicating when the rental terms come to an end, triggering certain rights and obligations for both parties."&lt;SEP&gt;"The termination date is the specified date at which the rental agreement ends and the tenant must vacate the property."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </node>
+    <node id="&quot;RETALIATORY CONDUCT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Retaliatory conduct refers to actions taken by the landlord against the tenant that are prohibited by law, designed to penalize the tenant for exercising their rights."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;RENTAL RATE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The rental rate refers to the amount of money that a tenant is required to pay to the landlord for occupying the rental property."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;FIXED-TERM RENTAL AGREEMENT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"A fixed-term rental agreement is a contract that specifies a set duration for the tenancy, after which it may be renewed or terminated."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;WAIVER&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"A waiver is a legal relinquishment of a right or claim, which can occur in rental agreements under specific conditions."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;COURT RULES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Court rules refer to the legal guidelines that govern proceedings involving disputes under rental agreements."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;TWO MONTHS' RENT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Two months' rent is a financial compensation that a tenant may recover if the landlord takes retaliatory action in violation of the law."</data>
+      <data key="d2">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </node>
+    <node id="&quot;COMMUNITY ORGANIZATION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Community organizations are groups that advocate for tenant rights and may assist tenants in complaints regarding landlord practices or housing code violations."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;LAW&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The law outlines regulations and rights pertaining to landlord and tenant relationships, including protections against retaliation by landlords."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;RETALIATORY ACTION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Retaliatory actions are acts by a landlord taken against a tenant after the tenant has asserted their rights, which are prohibited under Chicago law."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;TENANT'S UNION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A tenant's union is an organized group of tenants that seeks to improve housing conditions and advocate for tenants' rights against landlords."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;COOK COUNTY&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Cook County is a geographical area in Illinois where legal actions regarding forcible eviction and landlord-tenant disputes may be processed."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;LAWS OF ILLINOIS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The laws of Illinois encompass the legal framework governing landlord-tenant relationships, including rights, obligations, and procedures for eviction."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;TENANT CONDUCT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Tenant conduct refers to the actions taken by tenants that are protected by law and can be the basis for defenses against landlord retaliation."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;COMPLAINT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A complaint is a formal assertion made by tenants regarding violations of their rights or code violations by landlords."</data>
+      <data key="d2">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </node>
+    <node id="&quot;STATE OF ILLINOIS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The State of Illinois is referenced as a jurisdiction whose laws remain applicable in addressing landlord and tenant rights when this chapter does not provide a specific remedy."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;CIVIL LEGAL PROCEEDING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A civil legal proceeding occurs when a tenant or landlord seeks the enforcement of their rights through the court system, often regarding violations of rental agreements."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;COMMISSIONER OF HOUSING&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"The Commissioner of Housing is an official responsible for preparing summaries of ordinances regarding landlord and tenant rights and making them available for public inspection and copying."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;CHICAGO NON-EMERGENCY NUMBER 3-1-1&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The Chicago non-emergency number 3-1-1 is a resource for citizens to call regarding safety and municipal issues, including questions about the safety of rental property features."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;CIVIL REMEDY&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Civil remedies are legal solutions available to tenants for violations of their rights under housing ordinances that include monetary compensation or contract termination."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;ORAL AGREEMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"An oral agreement is an unwritten contract between landlords and tenants that represents a rental agreement, which still mandates the provision of specific summaries."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <node id="&quot;JUDICIARY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Judiciary is the judicial branch responsible for interpreting the laws regarding landlord and tenant disputes under the laws of the State of Illinois."</data>
+      <data key="d2">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </node>
+    <edge source="&quot;RESIDENTIAL LANDLORD AND TENANT ORDINANCE&quot;" target="&quot;CITY OF CHICAGO&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Residential Landlord and Tenant Ordinance governs the rights and obligations related to rental agreements within the City of Chicago."</data>
+      <data key="d5">"legal governance, rental rights"</data>
+      <data key="d6">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </edge>
+    <edge source="&quot;RESIDENTIAL LANDLORD AND TENANT ORDINANCE&quot;" target="&quot;CHICAGO HOUSING AUTHORITY&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Chicago Housing Authority operates housing programs that are regulated under the Residential Landlord and Tenant Ordinance."</data>
+      <data key="d5">"housing regulation, compliance"</data>
+      <data key="d6">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </edge>
+    <edge source="&quot;RESIDENTIAL LANDLORD AND TENANT ORDINANCE&quot;" target="&quot;ILLINOIS HOUSING DEVELOPMENT AUTHORITY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Illinois Housing Development Authority is involved in programs governed by the Residential Landlord and Tenant Ordinance."</data>
+      <data key="d5">"housing regulation, program oversight"</data>
+      <data key="d6">chunk-b822667a3deb6498c36004d88d76787b</data>
+    </edge>
+    <edge source="&quot;CITY OF CHICAGO&quot;" target="&quot;COMMISSIONER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Commissioner operates within the jurisdiction of the City of Chicago, responsible for regulatory oversight related to rental laws."</data>
+      <data key="d5">"regulatory oversight, governance"</data>
+      <data key="d6">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </edge>
+    <edge source="&quot;CITY OF CHICAGO&quot;" target="&quot;LANDLORD&quot;">
+      <data key="d3">26.0</data>
+      <data key="d4">"Chicago's laws govern the actions of landlords and establish the public policy for landlord-tenant interactions to prevent retaliatory actions."."&lt;SEP&gt;"The City of Chicago regulates landlord actions through ordinances that define rights and responsibilities in rental agreements."&lt;SEP&gt;"The City of Chicago's regulations govern the actions of landlords, including prohibitions against retaliatory conduct."</data>
+      <data key="d5">"legal framework, tenant protection"&lt;SEP&gt;"regulation, enforcement"&lt;SEP&gt;"regulatory framework, governance"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;CITY OF CHICAGO&quot;" target="&quot;TENANT&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"The City of Chicago establishes laws that protect tenant rights and remedies in rental situations."&lt;SEP&gt;"The City of Chicago provides laws that protect tenant rights and dictate rental agreement standards."</data>
+      <data key="d5">"legal protections, rights enforcement"&lt;SEP&gt;"tenant protection, rights"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7</data>
+    </edge>
+    <edge source="&quot;CITY OF CHICAGO&quot;" target="&quot;COMMISSIONER OF HOUSING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Commissioner of Housing operates under the authority of the City of Chicago to manage and distribute information regarding housing laws and tenant rights."</data>
+      <data key="d5">"government authority, regulation"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;TENANT&quot;">
+      <data key="d3">69.0</data>
+      <data key="d4">"Tenants must adhere to the conditions outlined in rental agreements, which detail their rights and responsibilities in the rental relationship."&lt;SEP&gt;"The Tenant is governed by the Rental Agreement, which outlines their rights and obligations within the rental property."&lt;SEP&gt;"The rental agreement outlines the obligations and rights of the tenant, binding them to comply with its terms."|&lt;|"contractual obligations, rights"&lt;SEP&gt;"The rental agreement outlines the terms and conditions that the tenant agrees to follow while renting the property."&lt;SEP&gt;"The rental agreement stipulates the terms under which a tenant occupies a dwelling unit, guiding the relationship."&lt;SEP&gt;"The tenant is bound by the terms and conditions set out in the rental agreement with the landlord."&lt;SEP&gt;"The tenant is bound by the terms of the rental agreement that defines their rights and obligations concerning the rental property."&lt;SEP&gt;"The tenant's rights and obligations are defined by the rental agreement they enter into with the landlord."</data>
+      <data key="d5">"contractual agreement, tenancy terms"&lt;SEP&gt;"contractual obligation, legal compliance"&lt;SEP&gt;"contractual obligations, rights"&lt;SEP&gt;"contractual obligations, tenant rights"&lt;SEP&gt;"contractual obligations, terms of lease"&lt;SEP&gt;"contractual terms, rights"&lt;SEP&gt;"rights and obligations, legal contract"&lt;SEP&gt;9</data>
+      <data key="d6">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;LANDLORD&quot;">
+      <data key="d3">52.0</data>
+      <data key="d4">"Rental agreements are the formal contracts established by landlords setting terms for the tenant's occupation of a property."&lt;SEP&gt;"The Landlord enters into a Rental Agreement with the Tenant that governs the terms of the lease, including security deposits."&lt;SEP&gt;"The Landlord is bound by the terms of the Rental Agreement, which governs the obligations they must fulfill towards the Tenant."&lt;SEP&gt;"The Landlord is responsible for adhering to the terms of the Rental Agreement, which stipulates the conditions of the tenancy."&lt;SEP&gt;"The landlord creates the rental agreement that outlines the conditions under which a tenant may occupy the rental property."&lt;SEP&gt;"The rental agreement serves as the legal framework defining the landlord's rights and responsibilities regarding the property."|&lt;|"legal framework, rights and responsibilities"</data>
+      <data key="d5">"contractual creation, legal framework"&lt;SEP&gt;"contractual nature, obligations"&lt;SEP&gt;"contractual obligation, governance"&lt;SEP&gt;"contractual obligation, rental terms"&lt;SEP&gt;"obligations, legal contract"&lt;SEP&gt;8</data>
+      <data key="d6">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;SECURITY DEPOSIT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The security deposit is a crucial component of the rental agreement, outlining the conditions under which it may be withheld or returned."</data>
+      <data key="d5">"financial security, lease conditions"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;FIRE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The rental agreement specifies conditions under which it may be terminated due to a fire affecting the property."</data>
+      <data key="d5">"property damage, contractual terms"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;EMERGENCY REPAIRS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The rental agreement often stipulates obligations for both tenant and landlord concerning emergency repairs and maintenance."</data>
+      <data key="d5">"maintenance, safety"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;RENTAL AGREEMENT&quot;" target="&quot;LAW&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The laws of Illinois regulate the contents and enforcement of rental agreements between landlords and tenants."."</data>
+      <data key="d5">"legal framework, contract regulation"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;LANDLORD&quot;">
+      <data key="d3">127.0</data>
+      <data key="d4">"Landlord and Tenant have a legal relationship wherein the Tenant agrees to pay rent in exchange for the right to occupy the Landlord's property."&lt;SEP&gt;"Landlords and tenants are parties to a rental agreement, each having specified rights and responsibilities as defined by the Residential Landlord and Tenant Ordinance."&lt;SEP&gt;"Landlords have a contractual relationship with tenants, providing rental properties in exchange for payment and adhering to legal obligations."."&lt;SEP&gt;"The Landlord and Tenant have a contractual relationship defined by the rental agreement that outlines mutual obligations and rights."&lt;SEP&gt;"The Tenant and Landlord are in a contractual relationship defined by the Rental Agreement, with specific rights and responsibilities for both parties."&lt;SEP&gt;"The Tenant has a contractual relationship with the Landlord, requiring the Landlord to fulfill certain obligations and maintain the property for the Tenant's use."&lt;SEP&gt;"The Tenant interacts with the Landlord regarding rental payments and the management of security deposits."&lt;SEP&gt;"The landlord and tenant enter into a rental agreement which stipulates the rights and responsibilities of both parties during the tenancy."&lt;SEP&gt;"The landlord and tenant have a contractual relationship established through the rental agreement, which outlines their rights and obligations."|&lt;|"contractual relationship, rights and obligations"&lt;SEP&gt;"The landlord and tenant have a contractual relationship governed by the rental agreement, which outlines their rights and responsibilities."&lt;SEP&gt;"The landlord and tenant relationship is defined by rental agreements that stipulate rights, obligations, and remedies for both parties."&lt;SEP&gt;"The landlord is responsible for managing the property rented to the tenant and maintaining the terms of their rental agreement."&lt;SEP&gt;"The relationship between landlord and tenant is foundational in rental agreements, with the landlord providing the dwelling unit and the tenant agreeing to occupancy terms."&lt;SEP&gt;"The tenant has a contractual relationship with the landlord as they rent the property, requiring both parties to adhere to the terms of the rental agreement."</data>
+      <data key="d5">"contractual relationship, housing"&lt;SEP&gt;"contractual relationship, obligations"&lt;SEP&gt;"contractual relationship, rights and obligations"&lt;SEP&gt;"contractual relationship, rights and responsibilities"&lt;SEP&gt;"contractual relationship, tenant rights"&lt;SEP&gt;"contractual relationship, tenant-landlord dynamics"&lt;SEP&gt;"parties to agreement, mutual obligations"&lt;SEP&gt;"rental agreement, legal obligations"&lt;SEP&gt;"rental relationship, legal obligations"&lt;SEP&gt;"rental relationship, occupancy"&lt;SEP&gt;"rental relationship, property management"&lt;SEP&gt;9</data>
+      <data key="d6">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-8afa5a33f6f01f872089d10f74700726&lt;SEP&gt;chunk-948f888104b901aa818d8a64425e31e7&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa&lt;SEP&gt;chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-b822667a3deb6498c36004d88d76787b&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;DWELLING UNIT&quot;">
+      <data key="d3">38.0</data>
+      <data key="d4">"A tenant occupies a dwelling unit based on the rental agreement made with the landlord, establishing their residential relationship."&lt;SEP&gt;"The Tenant has the right to occupy the Dwelling Unit as per the rental agreement, which stipulates their residential rights."&lt;SEP&gt;"The tenant occupies the dwelling unit as per the terms outlined in the rental agreement, which defines their living arrangement and rights."&lt;SEP&gt;"The tenant occupies the dwelling unit under the terms of the rental agreement, establishing a direct connection to the space."|&lt;|"occupancy, contractual relationship"</data>
+      <data key="d5">"housing, rental agreement"&lt;SEP&gt;"occupational rights, tenancy"&lt;SEP&gt;"residency, occupancy"&lt;SEP&gt;10</data>
+      <data key="d6">chunk-b6545ef03dc8e11cfc621983d50e00f5&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;PERIODIC TENANCY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"A periodic tenancy outlines the duration and conditions under which tenants may inhabit a dwelling unit until terminated."</data>
+      <data key="d5">"tenancy structure, occupancy duration"</data>
+      <data key="d6">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;REPAIRS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The tenant may request repairs from the landlord as part of their right to a well-maintained living environment."</data>
+      <data key="d5">"maintenance request, tenant rights"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;INJUNCTIVE RELIEF&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"Tenants may seek injunctive relief if the landlord conducts unlawful entry or harassment."&lt;SEP&gt;"The Tenant may seek Injunctive Relief to compel the Landlord to fulfill their obligations under the rental agreement."</data>
+      <data key="d5">"legal action, tenant protection"&lt;SEP&gt;"legal remedy, compliance"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;SECURITY DEPOSIT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The tenant pays a security deposit to the landlord as part of securing the rental agreement and protecting potential damages or unpaid rent."</data>
+      <data key="d5">"financial obligation, rental agreement"</data>
+      <data key="d6">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;EXCESS INTEREST&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The tenant is entitled to receive any excess interest accrued from their security deposit that is held longer than six months, as stipulated in the rental agreement."</data>
+      <data key="d5">"financial rights, rental agreement"</data>
+      <data key="d6">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;CITY COMPTROLLER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The City Comptroller provides essential information regarding interest rates on security deposits that affect tenants."</data>
+      <data key="d5">"financial regulation, tenant information"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;TRANSFEROR&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Transferor remains jointly liable to the Tenant for the security deposit until a formal transfer occurs."</data>
+      <data key="d5">"liability, rental agreement"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;DAMAGES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Tenant may be awarded Damages if the landlord fails to comply with security deposit regulations, including interest payment deficiencies."</data>
+      <data key="d5">"legal rights, compensation"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;COURT OF COMPETENT JURISDICTION&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Tenant can bring a cause of action in the Court of Competent Jurisdiction to challenge the correctness of interest calculations."</data>
+      <data key="d5">"legal recourse, dispute resolution"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;FORECLOSURE ACTION&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Tenants must be notified by the Landlord if a Foreclosure Action is filed against the property they occupy, important for their rights."</data>
+      <data key="d5">"notification, tenant rights"</data>
+      <data key="d6">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;SECTION 5-12-090&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Section 5-12-090 outlines remedies available to the Tenant if the Landlord fails to uphold rental agreement standards."</data>
+      <data key="d5">"tenant rights, legal action"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;TENANT REMEDIES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Tenant has access to Tenant Remedies, which are legal recourses available when landlords fail to comply with their obligations."</data>
+      <data key="d5">"legal rights, tenant protection"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;MATERIAL NONCOMPLIANCE&quot;">
+      <data key="d3">15.0</data>
+      <data key="d4">"If the tenant fails to comply with significant terms of the rental agreement, it can lead to actions taken by the landlord."&lt;SEP&gt;"The Tenant's rights may be violated in cases of Material Noncompliance by the Landlord, impacting their living conditions."</data>
+      <data key="d5">"contract breach, compliance issues"&lt;SEP&gt;"tenant rights, compliance"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;POSSESSION&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Tenant's right to Possession signifies their entitlement to occupy the dwelling unit as per the rental agreement."</data>
+      <data key="d5">"occupational rights, tenancy"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;WRITTEN NOTICE&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"The Tenant may deliver Written Notice to the Landlord to address issues like Material Noncompliance or intent to terminate the rental agreement."&lt;SEP&gt;"The landlord must provide written notice to the tenant regarding breaches, which is a legal requirement in rental agreements."</data>
+      <data key="d5">"formal communication, tenant rights"&lt;SEP&gt;"legal process, tenant rights"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;TENANT'S FAMILY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Tenant's Family may share rights and responsibilities regarding the occupancy of the Dwelling Unit under the rental agreement."</data>
+      <data key="d5">"shared living, tenancy rights"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;FIRE OR CASUALTY DAMAGE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Tenant's rights and actions are influenced by occurrences of Fire or Casualty Damage as specified in their Rental Agreement."</data>
+      <data key="d5">"property damage, tenant rights"</data>
+      <data key="d6">chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;ABANDONMENT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"When the tenant abandons the dwelling unit, they violate the terms of the rental agreement, permitting the landlord to take action."|&lt;|"violation, legal action"</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;COMMUNITY ORGANIZATION&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Tenants may engage with community organizations to seek assistance or advocate for their rights regarding housing issues."."</data>
+      <data key="d5">"advocacy, tenant rights"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;TENANT'S UNION&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Tenants may become members of a tenant's union to collectively advocate for their rights and improve their living conditions."."</data>
+      <data key="d5">"advocacy, collective action"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;STATE OF ILLINOIS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The laws of the State of Illinois provide additional rights and remedies for tenants beyond those specific to the City of Chicago ordinances."</data>
+      <data key="d5">"jurisdiction, legal framework"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;CIVIL LEGAL PROCEEDING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Tenants may engage in civil legal proceedings to enforce their rights as defined in rental agreements and local ordinances."</data>
+      <data key="d5">"legal enforcement, rights"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;SECURITY DEPOSITS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Tenants are entitled to returns on their security deposits, and rights regarding these funds are protected under ordinance regulations."</data>
+      <data key="d5">"financial rights, tenant advocacy"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;CHICAGO NON-EMERGENCY NUMBER 3-1-1&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Tenants can use the Chicago non-emergency number 3-1-1 to inquire about issues related to rental properties and safety regulations."</data>
+      <data key="d5">"resources, tenant support"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;TENANT&quot;" target="&quot;ORAL AGREEMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"In the case of an oral agreement, tenants are still required to be informed of their rights through documented summaries prepared by landlords."</data>
+      <data key="d5">"contractual obligation, rights"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;OWNER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The owner of a property is often the landlord, as the landlord's rights directly relate to ownership of the dwelling unit."</data>
+      <data key="d5">"ownership, rental rights"</data>
+      <data key="d6">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;ILLINOIS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Landlords in Illinois must comply with state laws regarding the holding of security deposits and their responsibilities."</data>
+      <data key="d5">"legal compliance, jurisdiction"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;MUNICIPAL CODE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The landlord must adhere to the municipal code provisions related to property maintenance and tenant rights."</data>
+      <data key="d5">"legal obligations, governance"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;PREMISES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The landlord is responsible for maintaining and accessing the premises as stipulated in the rental agreement."</data>
+      <data key="d5">"property management, landlord responsibilities"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;SECURITY DEPOSITS&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"Landlords are responsible for handling security deposits, including adherence to interest regulations and returning deposits to tenants upon termination of agreements."&lt;SEP&gt;"The landlord must hold and manage security deposits according to state laws and ensure they are not commingled with other assets."</data>
+      <data key="d5">"financial management, legal compliance"&lt;SEP&gt;"financial obligation, tenant protection"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad&lt;SEP&gt;chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;NOTICE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The landlord is required to provide notice to the tenant before entering the dwelling unit, ensuring transparency and respect for privacy."</data>
+      <data key="d5">"transparency, communication"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;SECURITY DEPOSIT&quot;">
+      <data key="d3">37.0</data>
+      <data key="d4">"The Landlord holds the Security Deposit as a guarantee for the Tenant's obligations concerning the rental agreement, to be returned if conditions are met."&lt;SEP&gt;"The Landlord is responsible for managing and returning the Security Deposit according to relevant laws and regulations."&lt;SEP&gt;"The Landlord is responsible for managing security deposits received from the Tenant, including compliance with notification requirements."&lt;SEP&gt;"The landlord collects a security deposit from the tenant as part of the rental agreement to protect against damages and unpaid rent."</data>
+      <data key="d5">"financial guarantee, contract"&lt;SEP&gt;"financial obligation, landlord responsibilities"&lt;SEP&gt;"financial obligation, rental agreement"&lt;SEP&gt;"financial responsibility, compliance"</data>
+      <data key="d6">chunk-9177bd0c8a93a10bd432b21c5f8d990c&lt;SEP&gt;chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-7759df7263a7c6a25e1e83bd43ddc9c9&lt;SEP&gt;chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;FINANCIAL INSTITUTION&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The landlord deposits the tenant's security deposit in a financial institution as required by law, ensuring its safekeeping."</data>
+      <data key="d5">"financial management, legal compliance"</data>
+      <data key="d6">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;SUCCESSOR LANDLORD&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The successor landlord inherits obligations related to the security deposit from the transferring landlord, ensuring continuity in the rental agreement protection."</data>
+      <data key="d5">"property transfer, financial obligation"</data>
+      <data key="d6">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;THIRTY DAYS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Landlord must pay interest on the security deposit within Thirty Days to avoid liabilities, indicating strict adherence to regulations."</data>
+      <data key="d5">"compliance, financial obligation"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;FORTY-FIVE DAYS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Landlord has a Forty-Five Days window to pay interest on certain prepaid rents, highlighting timelines crucial for legal compliance."</data>
+      <data key="d5">"financial timeline, obligation"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;FORECLOSURE ACTION&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Landlords are subject to legal actions, specifically Foreclosure Actions, which can terminate or affect rental agreements."</data>
+      <data key="d5">"legal consequences, property rights"</data>
+      <data key="d6">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;NOTICE OF CONDITIONS AFFECTING HABITABILITY&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Landlord must provide the Notice of Conditions Affecting Habitability to ensure tenants are informed of any issues that could affect their living conditions."</data>
+      <data key="d5">"tenant protection, compliance"</data>
+      <data key="d6">chunk-9177bd0c8a93a10bd432b21c5f8d990c</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;SECTION 5-12-070&quot;">
+      <data key="d3">26.0</data>
+      <data key="d4">"Section 5-12-070 establishes the legal responsibilities of the Landlord towards the Tenant in terms of property conditions and services."&lt;SEP&gt;"The Landlord is obligated by Section 5-12-070 to maintain the dwelling unit in a fit and habitable condition, affecting tenant living conditions."&lt;SEP&gt;"The Landlord must comply with Section 5-12-070 as it details regulations affecting the rental agreement and tenant rights."</data>
+      <data key="d5">"legal obligation, property maintenance"&lt;SEP&gt;"legal obligations, tenant protection"&lt;SEP&gt;"regulatory compliance, obligations"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887&lt;SEP&gt;chunk-c3bc1dbbc22da4bbc6a6de45ffaa66df&lt;SEP&gt;chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;SECTION 5-12-101&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Landlord must comply with Section 5-12-101 by providing information on bed bug prevention and treatment to tenants."</data>
+      <data key="d5">"tenant education, compliance"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;DEPARTMENT OF HEALTH&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Landlord is required to work alongside the Department of Health to provide necessary educational materials and maintain health standards in properties."</data>
+      <data key="d5">"collaboration, health standards"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;ESSENTIAL SERVICES&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Landlord is obligated to provide Essential Services to ensure the Tenant's health and safety in the dwelling unit."</data>
+      <data key="d5">"services obligation, tenant safety"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;DAMAGES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"If the Landlord fails to meet obligations, they may be liable to pay Damages to the Tenant as compensation."</data>
+      <data key="d5">"legal liability, compensation"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;MATERIAL DEFECTS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Landlord is responsible for addressing Material Defects in the property to maintain its habitability and comply with the rental agreement."</data>
+      <data key="d5">"maintenance obligation, tenant rights"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;EMERGENCY REPAIRS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Landlord is required to conduct Emergency Repairs in a timely manner to ensure the Tenant's safety and health."</data>
+      <data key="d5">"urgency, safety"</data>
+      <data key="d6">chunk-bbf2a304267f411fdd75632601e64887</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;ILLINOIS CODE OF CIVIL PROCEDURE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The landlord's actions regarding evictions and rent collections must adhere to the guidelines established by the Illinois Code of Civil Procedure."</data>
+      <data key="d5">"legal compliance, eviction process"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;FIRE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The landlord has the responsibility to address issues related to fire occurrences as they pertain to the rental agreement's termination."</data>
+      <data key="d5">"safety concerns, lease termination"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;GOOD FAITH EFFORT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The landlord must demonstrate a good faith effort to re-rent the unit after the tenant has early terminated the rental agreement."</data>
+      <data key="d5">"re-renting, landlord obligations"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;DWELLING UNIT&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The landlord maintains ownership over the dwelling unit and is responsible for its management and repair."|&lt;|"ownership, property management"</data>
+      <data key="d5">10</data>
+      <data key="d6">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;INJUNCTIVE RELIEF&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The landlord may seek injunctive relief against the tenant if there are violations of the rental agreement."|&lt;|"legal remedy, violation"</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-b6545ef03dc8e11cfc621983d50e00f5</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;RETALIATORY CONDUCT&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Retaliatory conduct by the landlord against the tenant is prohibited under the laws enforced by the City of Chicago."</data>
+      <data key="d5">"prohibition, legal consequences"</data>
+      <data key="d6">chunk-948f888104b901aa818d8a64425e31e7</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;COMMUNITY ORGANIZATION&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Community organizations may intervene in disputes involving landlords and tenant rights, often advocating for tenants against unfair practices."."</data>
+      <data key="d5">"advocacy, dispute resolution"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;COOK COUNTY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Landlords must operate within the jurisdiction of Cook County, which has specific regulations and processes for eviction and tenant disputes."."</data>
+      <data key="d5">"jurisdiction, legal compliance"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;STATE OF ILLINOIS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The State of Illinois has regulations applicable to landlords that can affect their responsibilities and obligations in rental agreements."</data>
+      <data key="d5">"jurisdiction, legal framework"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;CIVIL LEGAL PROCEEDING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Landlords may also enter civil legal proceedings regarding disputes over rental agreements and tenant actions."</data>
+      <data key="d5">"legal enforcement, disputes"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;LANDLORD&quot;" target="&quot;ORAL AGREEMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Landlords must provide written summaries to tenants even if a rental agreement is established orally, ensuring transparency and compliance with regulations."</data>
+      <data key="d5">"regulation compliance, tenant information"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;SECURITY DEPOSITS&quot;" target="&quot;COMMISSIONER OF HOUSING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Commissioner of Housing provides information and updates related to the management of security deposits, including interest rates and obligations to tenants."</data>
+      <data key="d5">"financial regulation, tenant rights"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;DWELLING UNIT&quot;" target="&quot;SUCCESSOR LANDLORD&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A successor landlord may take control of a dwelling unit from a previous landlord, maintaining the rental relationship with tenants."</data>
+      <data key="d5">"property transfer, landlord responsibilities"</data>
+      <data key="d6">chunk-d2157989b5839c3e9aeb71adca8d9db4</data>
+    </edge>
+    <edge source="&quot;SUCCESSOR LANDLORD&quot;" target="&quot;NOTICE OF TRANSFER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The successor landlord is obligated to provide the tenant with a notice of transfer when they take over the property, as required by law."</data>
+      <data key="d5">"legal requirement, landlord obligation"</data>
+      <data key="d6">chunk-7759df7263a7c6a25e1e83bd43ddc9c9</data>
+    </edge>
+    <edge source="&quot;SUCCESSOR LANDLORD&quot;" target="&quot;TRANSFEROR&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Successor Landlord assumes responsibilities from the Transferor, including managing the security deposit effectively."</data>
+      <data key="d5">"transfer of responsibility, landlord transition"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;ACCESS&quot;" target="&quot;EMERGENCY&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"In emergencies, the landlord can access the unit without notice, prioritizing safety and urgent repairs."</data>
+      <data key="d5">"emergency procedure, immediate access"</data>
+      <data key="d6">chunk-caa542bbeffaceb300226b5da0f70961</data>
+    </edge>
+    <edge source="&quot;CITY COMPTROLLER&quot;" target="&quot;INTEREST RATE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The City Comptroller calculates and announces the Interest Rate for security deposits based on the prevailing rates in local banks."</data>
+      <data key="d5">"financial governance, rate determination"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;CITY COMPTROLLER&quot;" target="&quot;MAYOR&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Mayor directs the City Comptroller in preparing and publishing information related to security deposits and tenant rights."</data>
+      <data key="d5">"administrative oversight, public communication"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;CITY COMPTROLLER&quot;" target="&quot;PAMPHLET OR BROCHURE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The City Comptroller oversees the production and distribution of pamphlets or brochures detailing tenant and landlord rights regarding security deposits."</data>
+      <data key="d5">"public information, tenant awareness"</data>
+      <data key="d6">chunk-bc145ddced779a4e72a5f21656d00d2e</data>
+    </edge>
+    <edge source="&quot;PUBLIC SERVICE ANNOUNCEMENTS&quot;" target="&quot;COMMISSIONER OF HOUSING&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Commissioner of Housing is responsible for preparing and distributing public service announcements that inform tenants about important housing regulations and rates."</data>
+      <data key="d5">"information dissemination, regulation"</data>
+      <data key="d6">chunk-471bca0f3da3db4a8af4c1624c74f5ad</data>
+    </edge>
+    <edge source="&quot;SECTION 5-12-070&quot;" target="&quot;MATERIAL NONCOMPLIANCE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Material Noncompliance identified in Section 5-12-070 highlights specific landlord obligations and the consequences of failing to meet them."</data>
+      <data key="d5">"legal compliance, housing standards"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;BED BUGS&quot;" target="&quot;INFORMATIONAL BROCHURE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Informational Brochure provides information specifically about handling Bed Bugs, aligning with the legal requirements set forth in rental agreements."</data>
+      <data key="d5">"education, pest control"</data>
+      <data key="d6">chunk-1b28d02fb2d5d40898b1812c5ffa049c</data>
+    </edge>
+    <edge source="&quot;BUILDING CODE&quot;" target="&quot;LAW&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The laws of Illinois include building codes that landlords are required to follow to ensure safe living conditions for tenants."."</data>
+      <data key="d5">"legal obligation, safety"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;GOOD FAITH EFFORT&quot;" target="&quot;FAIR RENTAL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Determining a fair rental is critical for the landlord to satisfy legal obligations in re-renting a unit under good faith efforts."</data>
+      <data key="d5">"market value, rental terms"</data>
+      <data key="d6">chunk-49eeebcde41c80ab078e5fdc2db008fa</data>
+    </edge>
+    <edge source="&quot;LAW&quot;" target="&quot;RETALIATORY ACTION&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The law specifically prohibits retaliatory actions by landlords against tenants, establishing protections for tenants."."</data>
+      <data key="d5">"legal protection, retaliation"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+    <edge source="&quot;LAW&quot;" target="&quot;TENANT CONDUCT&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Tenant conduct that is protected by law serves as a defense in legal matters involving alleged retaliatory actions by landlords."."</data>
+      <data key="d5">"legal protection, tenant rights"</data>
+      <data key="d6">chunk-8afa5a33f6f01f872089d10f74700726</data>
+    </edge>
+  </graph>
+</graphml>

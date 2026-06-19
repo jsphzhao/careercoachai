@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Career Coach</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg-gradient: linear-gradient(135deg, #ebefff 0%, #ecfbff 100%);
+            --sidebar-bg: #101525;
+            --text-primary: #0f1524;
+            --text-muted: #6c7a93;
+            --turquoise: #2ec9c9;
+            --turquoise-soft: rgba(46, 201, 201, 0.18);
+            --purple: #a88bff;
+            --purple-soft: rgba(168, 139, 255, 0.18);
+            --border-soft: rgba(15, 21, 36, 0.08);
+            --surface: #ffffff;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+        }
+
+        .app-shell {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(22px);
+            border-radius: 0;
+            box-shadow: none;
+            display: grid;
+            grid-template-columns: 260px 1fr 280px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: #edf1ff;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 22px 20px;
+            gap: 16px;
+            overflow-y: auto;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--turquoise), var(--purple));
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.06em;
+        }
+
+        .brand h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .session-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 16px;
+            padding: 14px 16px;
+            display: grid;
+            gap: 6px;
+        }
+
+        .session-card h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .session-card p {
+            font-size: 0.78rem;
+            color: rgba(237, 241, 255, 0.85);
+            line-height: 1.4;
+        }
+
+        .session-card .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(21, 182, 202, 0.16);
+            color: #3ce0e0;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .program-progress h3 {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(237, 241, 255, 0.72);
+            margin-bottom: 8px;
+        }
+
+        .week-track {
+            display: grid;
+            gap: 10px;
+        }
+
+        .week-item {
+            padding: 12px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
+            display: grid;
+            gap: 6px;
+            cursor: pointer;
+            transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+        }
+
+        .week-item:hover {
+            transform: translateX(6px);
+        }
+
+        .week-item.active {
+            background: rgba(46, 201, 201, 0.18);
+            border-color: rgba(46, 201, 201, 0.45);
+        }
+
+        .week-item.locked {
+            opacity: 0.45;
+            cursor: not-allowed;
+        }
+
+        .week-item:hover:not(.locked) {
+            background: rgba(46, 201, 201, 0.12);
+            border-color: rgba(46, 201, 201, 0.3);
+        }
+
+        .week-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .week-icon {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+        }
+
+        .week-item span {
+            font-size: 0.95rem;
+        }
+
+        .week-item small {
+            font-size: 0.75rem;
+            color: rgba(237, 241, 255, 0.70);
+        }
+
+        .progress-widget {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 16px;
+            padding: 14px 16px;
+        }
+
+        .progress-widget header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .progress-meter {
+            background: rgba(255, 255, 255, 0.12);
+            height: 8px;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-meter span {
+            display: block;
+            height: 100%;
+            width: 16.7%;
+            background: linear-gradient(90deg, var(--turquoise), var(--purple));
+            border-radius: 999px;
+            transition: width 0.5s ease;
+        }
+
+        /* Session Progress Bar - Horizontal bar in session header */
+        .session-progress {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .session-progress-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        .session-progress-bar {
+            height: 6px;
+            background: var(--border-soft);
+            border-radius: 999px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .session-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--turquoise), var(--purple));
+            border-radius: 999px;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 8px rgba(46, 201, 201, 0.3);
+        }
+
+        /* Overall Program Progress Bar - At bottom of page */
+        .program-progress-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border-top: 1px solid var(--border-soft);
+            padding: 16px 28px;
+            z-index: 100;
+            box-shadow: 0 -2px 12px rgba(15, 21, 36, 0.06);
+        }
+
+        .program-progress-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .program-progress-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            white-space: nowrap;
+            min-width: 120px;
+        }
+
+        .program-progress-track {
+            flex: 1;
+            height: 10px;
+            background: var(--border-soft);
+            border-radius: 999px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            gap: 2px;
+        }
+
+        .program-progress-segment {
+            flex: 1;
+            height: 100%;
+            background: rgba(15, 21, 36, 0.05);
+            border-radius: 999px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .program-progress-segment.completed {
+            background: linear-gradient(90deg, var(--turquoise), var(--purple));
+            box-shadow: 0 0 12px rgba(46, 201, 201, 0.4);
+        }
+
+        .program-progress-segment.in-progress {
+            background: linear-gradient(90deg, var(--turquoise-soft), var(--purple-soft));
+            border: 1.5px solid var(--turquoise);
+        }
+
+        .program-progress-segment.locked {
+            background: rgba(15, 21, 36, 0.05);
+            opacity: 0.4;
+        }
+
+        .program-progress-segment::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        .program-progress-segment.in-progress::after {
+            animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .program-progress-percent {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .chat-panel {
+            display: flex;
+            flex-direction: column;
+            background: #fafbfd;
+            overflow: hidden;
+            padding-bottom: 80px; /* Space for bottom progress bar */
+        }
+
+        .session-hero {
+            padding: 20px 28px;
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        .session-hero h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .chat-stream {
+            flex: 1;
+            padding: 20px 28px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .message header > span:first-child {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .message header svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+        }
+
+        .voice-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(168, 139, 255, 0.12);
+            color: var(--purple);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .voice-pill svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .bubble {
+            background: var(--surface);
+            border: 1px solid var(--border-soft);
+            border-radius: 18px;
+            padding: 16px 20px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(15, 21, 36, 0.04);
+        }
+
+        .from-nova .bubble {
+            background: linear-gradient(135deg, var(--turquoise-soft), var(--purple-soft));
+            border-color: rgba(46, 201, 201, 0.25);
+        }
+
+        .from-user .bubble {
+            background: var(--surface);
+        }
+
+        .composer {
+            padding: 20px 28px;
+            border-top: 1px solid var(--border-soft);
+            background: #fafbfd;
+        }
+
+        .input-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            background: var(--surface);
+            border: 1.5px solid var(--border-soft);
+            border-radius: 16px;
+            padding: 12px 16px;
+            transition: border-color 0.25s ease;
+        }
+
+        .input-wrapper:focus-within {
+            border-color: var(--turquoise);
+        }
+
+        .input-wrapper textarea {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.95rem;
+            resize: none;
+            min-height: 24px;
+            max-height: 120px;
+            line-height: 1.5;
+        }
+
+        .mic-icon {
+            background: linear-gradient(135deg, var(--turquoise), var(--purple));
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .mic-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .mic-icon svg {
+            stroke: white;
+        }
+
+        .submit-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-button {
+            background: var(--surface);
+            border: 1.5px solid var(--border-soft);
+            border-radius: 10px;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .icon-button:hover {
+            background: var(--turquoise-soft);
+            border-color: var(--turquoise);
+        }
+
+        .primary-button {
+            background: linear-gradient(135deg, var(--turquoise), var(--purple));
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .primary-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .primary-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .composer footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .voice-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .voice-controls button {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 0.75rem;
+            text-decoration: underline;
+        }
+
+        .avatar-panel {
+            background: #fafbfd;
+            border-left: 1px solid var(--border-soft);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .avatar-card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .avatar-frame {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--turquoise-soft), var(--purple-soft));
+            border: 2px solid rgba(46, 201, 201, 0.25);
+            overflow: hidden;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .avatar-frame.speaking {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                border-color: rgba(46, 201, 201, 0.25);
+                box-shadow: 0 0 0 0 rgba(46, 201, 201, 0.4);
+            }
+            50% {
+                border-color: rgba(46, 201, 201, 0.8);
+                box-shadow: 0 0 0 8px rgba(46, 201, 201, 0);
+            }
+        }
+
+        .voice-state {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            background: var(--surface);
+            border: 1px solid var(--border-soft);
+            border-radius: 12px;
+        }
+
+        .voice-state svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--turquoise);
+        }
+
+        .voice-status-text {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .avatar-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .avatar-controls label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        .avatar-controls select {
+            width: 100%;
+            padding: 10px;
+            border: 1.5px solid var(--border-soft);
+            border-radius: 10px;
+            background: var(--surface);
+            font-family: inherit;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .avatar-controls button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, var(--turquoise), var(--purple));
+            border: none;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .avatar-controls button:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Loading indicator */
+        .loading-indicator {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .loading-indicator.active {
+            display: block;
+        }
+
+        /* Name input modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-overlay.hidden {
+            display: none;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border-radius: 24px;
+            padding: 32px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .modal-content p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid var(--border-soft);
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .modal-content input:focus {
+            outline: none;
+            border-color: var(--turquoise);
+        }
+
+        .modal-content button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, var(--turquoise), var(--purple));
+            border: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .modal-content button:hover {
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Name Input Modal -->
+    <div class="modal-overlay" id="nameModal">
+        <div class="modal-content">
+            <h2>Welcome to DRIVEN! 🎯</h2>
+            <p>Before we begin, what's your name?</p>
+            <input type="text" id="userName" placeholder="Enter your name..." autofocus>
+            <button onclick="startConversation()">Start Journey</button>
+        </div>
+    </div>
+
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">N</div>
+                <h1>NOVA<br>Career Coach</h1>
+            </div>
+            <section class="session-card">
+                <h2>Week 1</h2>
+                <p>Thinking Flexibly and Goal Setting</p>
+                <div class="status">● In Progress</div>
+            </section>
+            <section class="program-progress">
+                <h3>Your Program</h3>
+                <div class="week-track">
+                    <div class="week-item" data-week="1" onclick="navigateToWeek(1)">
+                        <div class="week-label">
+                            <span>Week 1</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.667 7.333L8 8.667l3.333-3.334" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 14A6 6 0 108 2a6 6 0 000 12z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Thinking flexibly</small>
+                    </div>
+                    <div class="week-item" data-week="2" onclick="navigateToWeek(2)">
+                        <div class="week-label">
+                            <span>Week 2</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.8 7.2V5.6a3.2 3.2 0 116.4 0v1.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 7.2h8A.8.8 0 0112.8 8v4a.8.8 0 01-.8.8H4a.8.8 0 01-.8-.8V8a.8.8 0 01.8-.8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Building resilience</small>
+                    </div>
+                    <div class="week-item" data-week="3" onclick="navigateToWeek(3)">
+                        <div class="week-label">
+                            <span>Week 3</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.8 7.2V5.6a3.2 3.2 0 116.4 0v1.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 7.2h8A.8.8 0 0112.8 8v4a.8.8 0 01-.8.8H4a.8.8 0 01-.8-.8V8a.8.8 0 01.8-.8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Career exploration</small>
+                    </div>
+                    <div class="week-item" data-week="4" onclick="navigateToWeek(4)">
+                        <div class="week-label">
+                            <span>Week 4</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.8 7.2V5.6a3.2 3.2 0 116.4 0v1.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 7.2h8A.8.8 0 0112.8 8v4a.8.8 0 01-.8.8H4a.8.8 0 01-.8-.8V8a.8.8 0 01.8-.8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Asking for Help</small>
+                    </div>
+                    <div class="week-item" data-week="5" onclick="navigateToWeek(5)">
+                        <div class="week-label">
+                            <span>Week 5</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.8 7.2V5.6a3.2 3.2 0 116.4 0v1.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 7.2h8A.8.8 0 0112.8 8v4a.8.8 0 01-.8.8H4a.8.8 0 01-.8-.8V8a.8.8 0 01.8-.8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Networking and Interviewing</small>
+                    </div>
+                    <div class="week-item" data-week="6" onclick="navigateToWeek(6)">
+                        <div class="week-label">
+                            <span>Week 6</span>
+                            <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.8 7.2V5.6a3.2 3.2 0 116.4 0v1.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 7.2h8A.8.8 0 0112.8 8v4a.8.8 0 01-.8.8H4a.8.8 0 01-.8-.8V8a.8.8 0 01.8-.8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <small>Launch & celebrate</small>
+                    </div>
+                </div>
+            </section>
+            <section class="progress-widget">
+                <header>
+                    <span>Progress</span>
+                    <span id="progressPercent">0%</span>
+                </header>
+                <div class="progress-meter">
+                    <span id="progressBar" style="width: 0%;"></span>
+                </div>
+            </section>
+        </aside>
+        <main class="chat-panel">
+            <section class="session-hero">
+                <h2>DRIVEN WEEK 1</h2>
+                <p class="subtitle">Thinking Flexibly and Goal Setting</p>
+                <div class="session-progress">
+                    <div class="session-progress-label">
+                        <span>Session Progress</span>
+                        <span id="sessionProgressPercent">0%</span>
+                    </div>
+                    <div class="session-progress-bar">
+                        <div class="session-progress-fill" id="sessionProgressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="chat-stream" id="chatStream">
+                <!-- Messages will be added here dynamically -->
+                <div class="loading-indicator" id="loadingIndicator">NOVA is thinking...</div>
+            </section>
+            <section class="composer">
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <textarea id="messageInput" placeholder='Type a message or say "Hey NOVA" to start speaking...' rows="1"></textarea>
+                        <button class="mic-icon" id="hold-to-talk" aria-label="Voice input">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 3.75a1.875 1.875 0 011.875 1.875v3.375a1.875 1.875 0 11-3.75 0V5.625A1.875 1.875 0 019 3.75z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 8.438A3 3 0 009 11.25a3 3 0 003-2.812M5.063 8.438A3.938 3.938 0 0013.5 8.438M9 11.25v2.812" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="submit-actions">
+                        <button class="icon-button" aria-label="Attach note" data-tooltip="Attach a note or reflection to this message">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.667 10.833l3.333 3.334 6.667-6.667" stroke="#121731" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.333 10.833l3.334 3.334" stroke="#121731" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="primary-button" id="sendButton" onclick="sendMessage()">Send to NOVA</button>
+                    </div>
+                </div>
+                <footer>
+                    <span>Shift + Enter to add a new line</span>
+                    <div class="voice-controls">
+                        <button id="toggle-voice">Simulate Voice Playback</button>
+                        <button onclick="downloadTranscript()">Download Transcript</button>
+                    </div>
+                </footer>
+            </section>
+        </main>
+        <aside class="avatar-panel">
+            <section class="avatar-card">
+                <div class="avatar-frame" id="nova-avatar">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="40" fill="url(#avatar-gradient)"/>
+                        <circle cx="50" cy="55" r="4" fill="white"/>
+                        <circle cx="70" cy="55" r="4" fill="white"/>
+                        <path d="M45 70c5 5 15 5 20 0" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="avatar-gradient" x1="0" y1="0" x2="120" y2="120">
+                                <stop offset="0%" stop-color="#2ec9c9"/>
+                                <stop offset="100%" stop-color="#a88bff"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="voice-state">
+                    <svg class="week-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3.333a1.667 1.667 0 011.667 1.667v3a1.667 1.667 0 11-3.334 0v-3A1.667 1.667 0 018 3.333zM5.333 7.333A2.667 2.667 0 008 10c1.47 0 2.667-1.197 2.667-2.667M4.667 7.333a3.333 3.333 0 006.666 0M8 10v2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="voice-status-text" id="voiceStatus">NOVA is ready to listen</span>
+                </div>
+                <div class="avatar-controls">
+                    <label for="avatar-style">Avatar Face</label>
+                    <select id="avatar-style">
+                        <option>Nova • Focused Mentor</option>
+                        <option>Nova • Creative Strategist</option>
+                        <option>Nova • Visionary Trailblazer</option>
+                    </select>
+                    <label for="voice-profile">Voice Profile</label>
+                    <select id="voice-profile">
+                        <option>Serene Confidence</option>
+                        <option>High-Energy Coach</option>
+                        <option>Reflective Mentor</option>
+                    </select>
+                    <button id="customize-avatar">Open Avatar Studio</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Overall Program Progress Bar - Fixed at bottom -->
+    <div class="program-progress-bar">
+        <div class="program-progress-content">
+            <div class="program-progress-label">Program Progress</div>
+            <div class="program-progress-track" id="programProgressTrack">
+                <!-- Segments will be added dynamically -->
+            </div>
+            <div class="program-progress-percent" id="programProgressPercent">0%</div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        // Week configuration - maps week numbers to their API base paths
+        const WEEK_CONFIG = {
+            1: { path: "/week1", name: "Week 1", title: "Thinking Flexibly and Goal Setting" },
+            2: { path: "/week2", name: "Week 2", title: "Building Resilience" }, // WEEK2_TEMP served by week2_main.py
+            3: { path: "/week3", name: "Week 3", title: "Career Exploration" },
+            4: { path: "/week4", name: "Week 4", title: "Interview Immersion" },
+            5: { path: "/week5", name: "Week 5", title: "Storytelling for Impact" },
+            6: { path: "/week6", name: "Week 6", title: "Launch & Celebrate" }
+        };
+        
+        // Get current week from URL parameter or default to 1
+        const urlParams = new URLSearchParams(window.location.search);
+        let currentWeek = parseInt(urlParams.get('week')) || 1;
+        if (!WEEK_CONFIG[currentWeek]) {
+            currentWeek = 1; // Default to week 1 if invalid
+        }
+        
+        const API_BASE = `${WEEK_CONFIG[currentWeek].path}/api`;
+        
+        // State management
+        let conversationState = {
+            initialized: false,
+            awaitingResponse: false,
+            currentQuestionNumber: null,
+            messageCount: 0,
+            currentWeek: currentWeek,
+            weeksProgress: {}
+        };
+
+        // Initialize app when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load progress for all weeks
+            loadProgressStatus();
+            
+            // Show name modal
+            document.getElementById('nameModal').classList.remove('hidden');
+            
+            // Setup event listeners
+            setupEventListeners();
+            
+            // Update UI to show current week
+            updateWeekDisplay();
+            
+            // Initialize progress bars
+            updateProgress();
+            
+            // Mark all weeks as unlocked (for testing)
+            document.querySelectorAll('.week-item').forEach(item => {
+                item.classList.remove('locked');
+            });
+        });
+        
+        async function loadProgressStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/progress/status`, {
+                    method: 'GET',
+                    credentials: 'include'
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        conversationState.weeksProgress = data.weeks;
+                        conversationState.currentWeek = data.current_week;
+                        updateWeekDisplay();
+                        // Update program progress after loading
+                        updateProgramProgress();
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading progress:', error);
+            }
+        }
+        
+        function updateWeekDisplay() {
+            // Update session hero to show current week
+            const sessionHero = document.querySelector('.session-hero h2');
+            if (sessionHero && WEEK_CONFIG[currentWeek]) {
+                sessionHero.textContent = `DRIVEN ${WEEK_CONFIG[currentWeek].name.toUpperCase()}`;
+            }
+            
+            const subtitle = document.querySelector('.session-hero .subtitle');
+            if (subtitle && WEEK_CONFIG[currentWeek]) {
+                subtitle.textContent = WEEK_CONFIG[currentWeek].title;
+            }
+
+            // Update active week in sidebar
+            document.querySelectorAll('.week-item').forEach(item => {
+                const weekNum = parseInt(item.getAttribute('data-week'));
+                if (weekNum === currentWeek) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+                // Remove locked class (all weeks unlocked for testing)
+                item.classList.remove('locked');
+            });
+        }
+
+        function navigateToWeek(weekNumber) {
+            if (!WEEK_CONFIG[weekNumber]) {
+                console.error(`Week ${weekNumber} not configured`);
+                return;
+            }
+            
+            const url = `${window.location.origin}/?week=${weekNumber}`;
+            window.location.href = url;
+        }
+
+        function setupEventListeners() {
+            const messageInput = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            
+            // Send on Enter (but not Shift+Enter)
+            messageInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+
+            // Auto-resize textarea
+            messageInput.addEventListener('input', () => {
+                messageInput.style.height = 'auto';
+                messageInput.style.height = messageInput.scrollHeight + 'px';
+            });
+
+            // Voice toggle simulation
+            const toggleVoiceButton = document.getElementById('toggle-voice');
+            const avatarFrame = document.getElementById('nova-avatar');
+            const voiceStatus = document.getElementById('voiceStatus');
+
+            toggleVoiceButton?.addEventListener('click', () => {
+                const speaking = avatarFrame.classList.toggle('speaking');
+                toggleVoiceButton.textContent = speaking ? 'Pause Voice Playback' : 'Simulate Voice Playback';
+                if (voiceStatus) {
+                    voiceStatus.textContent = speaking ? 'NOVA is speaking' : 'NOVA is ready to listen';
+                }
+            });
+
+            // Allow Enter key in name input
+            document.getElementById('userName').addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    startConversation();
+                }
+            });
+        }
+
+        async function startConversation() {
+            const userName = document.getElementById('userName').value.trim();
+            
+            if (!userName) {
+                alert('Please enter your name to continue');
+                return;
+            }
+
+            // Hide modal
+            document.getElementById('nameModal').classList.add('hidden');
+
+            // Initialize conversation
+            try {
+                const response = await fetch(`${API_BASE}/initialize`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify({ name: userName })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    conversationState.initialized = true;
+                    
+                    // Add NOVA's welcome message
+                    addMessage('nova', data.message);
+                    
+                    // Get next message (first question)
+                    setTimeout(() => getNextMessage(), 1500);
+                } else if (data.error && data.unlocked === false) {
+                    // Week is locked
+                    alert(data.error);
+                    // Redirect to previous week or week 1
+                    if (currentWeek > 1) {
+                        window.location.href = `?week=${currentWeek - 1}`;
+                    } else {
+                        window.location.href = `?week=1`;
+                    }
+                }
+            } catch (error) {
+                console.error('Error initializing conversation:', error);
+                addMessage('nova', 'Sorry, I encountered an error. Please refresh the page and try again.');
+            }
+        }
+
+        async function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const message = messageInput.value.trim();
+            
+            if (!message || !conversationState.initialized) return;
+
+            // Add user message to chat
+            addMessage('user', message);
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+
+            // Disable input while processing
+            setInputState(false);
+            showLoading(true);
+
+            try {
+                const response = await fetch(`${API_BASE}/process_response`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        message: message,
+                        question_number: conversationState.currentQuestionNumber
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Add NOVA's response
+                    setTimeout(() => {
+                        addMessage('nova', data.response);
+                        
+                        // If there's a follow-up question, add it
+                        if (data.needs_followup && data.followup_question) {
+                            setTimeout(() => {
+                                addMessage('nova', data.followup_question);
+                            }, 1000);
+                        }
+                        
+                        // If we should move to next step
+                        if (data.move_to_next) {
+                            setTimeout(() => {
+                                getNextMessage();
+                            }, 1500);
+                        } else {
+                            setInputState(true);
+                        }
+                        
+                        // Check if week is completed
+                        if (data.week_completed) {
+                            // Skip alert for Week 4 and Week 5 - just end naturally
+                            if (currentWeek !== 4 && currentWeek !== 5) {
+                                setTimeout(() => {
+                                    showWeekCompletionMessage();
+                                }, 2000);
+                            }
+                        }
+                        
+                        showLoading(false);
+                        updateProgress();
+                    }, 800);
+                }
+            } catch (error) {
+                console.error('Error sending message:', error);
+                addMessage('nova', 'Sorry, I encountered an error processing your response. Please try again.');
+                showLoading(false);
+                setInputState(true);
+            }
+        }
+
+        async function getNextMessage() {
+            showLoading(true);
+            
+            try {
+                const response = await fetch(`${API_BASE}/get_next_message`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include'
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    addMessage('nova', data.message);
+                    
+                    if (data.is_complete) {
+                        // Conversation complete
+                        setInputState(false);
+                        conversationState.awaitingResponse = false;
+                        
+                        // Show week completion message
+                        if (data.week_completed) {
+                            // Skip alert for Week 4 and Week 5 - just end naturally
+                            if (currentWeek !== 4 && currentWeek !== 5) {
+                                showWeekCompletionMessage();
+                            }
+                        }
+                    } else if (data.awaiting_response) {
+                        // Waiting for user response to question
+                        conversationState.awaitingResponse = true;
+                        conversationState.currentQuestionNumber = data.question_number;
+                        setInputState(true);
+                    } else {
+                        // Continue to next message
+                        setTimeout(() => getNextMessage(), 1500);
+                    }
+                    
+                    updateProgress();
+                }
+                
+                showLoading(false);
+            } catch (error) {
+                console.error('Error getting next message:', error);
+                showLoading(false);
+            }
+        }
+
+        function addMessage(sender, text) {
+            const chatStream = document.getElementById('chatStream');
+            const messageDiv = document.createElement('article');
+            messageDiv.className = `message from-${sender}`;
+            
+            const headerHTML = sender === 'nova' ? `
+                <header>
+                    <span>
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.333 12.964l.622-2.664A5.333 5.333 0 118 13.333a5.3 5.3 0 01-2.667-.73l-2 0.36z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        NOVA
+                    </span>
+                    <span class="voice-pill">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3.333a1.667 1.667 0 011.667 1.667v3a1.667 1.667 0 11-3.334 0v-3A1.667 1.667 0 018 3.333zM5.333 7.333A2.667 2.667 0 008 10c1.47 0 2.667-1.197 2.667-2.667M4.667 7.333a3.333 3.333 0 006.666 0M8 10v2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Response
+                    </span>
+                </header>
+            ` : `
+                <header>
+                    <span>You</span>
+                    <span class="voice-pill">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.667 8.667a5.333 5.333 0 009.547 3.186l2.12.547-.56-2.014A5.333 5.333 0 108.667 2.667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Typed
+                    </span>
+                </header>
+            `;
+            
+            messageDiv.innerHTML = `
+                ${headerHTML}
+                <div class="bubble">${formatMessage(text)}</div>
+            `;
+            
+            // Insert before loading indicator
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            chatStream.insertBefore(messageDiv, loadingIndicator);
+            
+            // Scroll to bottom
+            chatStream.scrollTop = chatStream.scrollHeight;
+            
+            conversationState.messageCount++;
+        }
+
+        function formatMessage(text) {
+            // Convert newlines to <br>
+            return text.replace(/\n/g, '<br>');
+        }
+
+        function showLoading(show) {
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            if (show) {
+                loadingIndicator.classList.add('active');
+            } else {
+                loadingIndicator.classList.remove('active');
+            }
+        }
+
+        function setInputState(enabled) {
+            const messageInput = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            
+            messageInput.disabled = !enabled;
+            sendButton.disabled = !enabled;
+            
+            if (enabled) {
+                messageInput.focus();
+            }
+        }
+
+        function updateProgress() {
+            // Session/Week Progress - based on current week's questions
+            updateSessionProgress();
+            
+            // Overall Program Progress - based on all weeks
+            updateProgramProgress();
+        }
+
+        function updateSessionProgress() {
+            // Calculate progress for current session/week
+            const estimatedTotal = 30; // Approximate total messages in current week
+            const progress = Math.min((conversationState.messageCount / estimatedTotal) * 100, 100);
+            
+            // Update sidebar progress widget
+            document.getElementById('progressPercent').textContent = `${Math.round(progress)}%`;
+            document.getElementById('progressBar').style.width = `${progress}%`;
+            
+            // Update session progress bar in header
+            const sessionProgressFill = document.getElementById('sessionProgressFill');
+            const sessionProgressPercent = document.getElementById('sessionProgressPercent');
+            if (sessionProgressFill && sessionProgressPercent) {
+                sessionProgressFill.style.width = `${progress}%`;
+                sessionProgressPercent.textContent = `${Math.round(progress)}%`;
+            }
+        }
+
+        function updateProgramProgress() {
+            // Calculate overall program progress across all 6 weeks
+            const totalWeeks = 6;
+            let completedWeeks = 0;
+            let totalProgress = 0;
+
+            if (conversationState.weeksProgress && Object.keys(conversationState.weeksProgress).length > 0) {
+                // Count completed weeks and calculate weighted progress
+                Object.keys(conversationState.weeksProgress).forEach(weekNum => {
+                    const week = conversationState.weeksProgress[weekNum];
+                    if (week.status && week.status.completed) {
+                        completedWeeks++;
+                        totalProgress += 100; // Full week completed
+                    } else if (week.status && week.status.questions_completed) {
+                        // Calculate partial progress for in-progress weeks
+                        const questionsCompleted = Object.keys(week.status.questions_completed).length;
+                        const estimatedQuestions = 8; // Average questions per week
+                        const weekProgress = Math.min((questionsCompleted / estimatedQuestions) * 100, 100);
+                        totalProgress += weekProgress;
+                    }
+                });
+            } else {
+                // Fallback: use current week progress if no weeks data
+                const estimatedTotal = 30;
+                const currentProgress = Math.min((conversationState.messageCount / estimatedTotal) * 100, 100);
+                totalProgress = currentProgress / totalWeeks; // Only count current week
+            }
+
+            const overallProgress = totalProgress / totalWeeks;
+            
+            // Update program progress bar
+            updateProgramProgressBar(overallProgress, completedWeeks);
+        }
+
+        function updateProgramProgressBar(overallProgress, completedWeeks) {
+            const track = document.getElementById('programProgressTrack');
+            const percent = document.getElementById('programProgressPercent');
+            
+            if (!track || !percent) return;
+
+            // Clear existing segments
+            track.innerHTML = '';
+
+            // Create 6 segments (one for each week)
+            const weekTitles = [
+                'Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'
+            ];
+
+            for (let i = 1; i <= 6; i++) {
+                const segment = document.createElement('div');
+                segment.className = 'program-progress-segment';
+                segment.setAttribute('data-week', i);
+                segment.setAttribute('title', weekTitles[i - 1]);
+
+                // Determine segment state
+                const weekData = conversationState.weeksProgress?.[i];
+                if (weekData?.status?.completed) {
+                    segment.classList.add('completed');
+                } else if (weekData?.status?.unlocked || i === currentWeek) {
+                    segment.classList.add('in-progress');
+                } else {
+                    segment.classList.add('locked');
+                }
+
+                track.appendChild(segment);
+            }
+
+            // Update percentage
+            percent.textContent = `${Math.round(overallProgress)}%`;
+        }
+
+        function downloadTranscript() {
+            const chatStream = document.getElementById('chatStream');
+            const messages = chatStream.querySelectorAll('.message');
+            
+            const weekName = WEEK_CONFIG[currentWeek]?.name || `Week ${currentWeek}`;
+            let transcript = `DRIVEN ${weekName} Conversation Transcript\n`;
+            transcript += '='.repeat(50) + '\n\n';
+            
+            messages.forEach(msg => {
+                const sender = msg.classList.contains('from-nova') ? 'NOVA' : 'YOU';
+                const text = msg.querySelector('.bubble').textContent;
+                transcript += `${sender}:\n${text}\n\n`;
+            });
+            
+            // Create download
+            const blob = new Blob([transcript], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `DRIVEN_${weekName.replace(' ', '')}_Transcript_${new Date().toISOString().split('T')[0]}.txt`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function showWeekCompletionMessage() {
+            // Check if there's a next week available
+            const availableWeeks = Object.keys(WEEK_CONFIG).map(Number).sort((a, b) => a - b);
+            const currentIndex = availableWeeks.indexOf(currentWeek);
+            const nextWeek = currentIndex < availableWeeks.length - 1 ? availableWeeks[currentIndex + 1] : null;
+            
+            let message = `🎉 Congratulations! You've completed ${WEEK_CONFIG[currentWeek]?.name || `Week ${currentWeek}`}!`;
+            
+            if (nextWeek) {
+                message += `\n\nYou can now proceed to ${WEEK_CONFIG[nextWeek]?.name || `Week ${nextWeek}`}.`;
+                message += `\n\nWould you like to continue to the next week?`;
+                
+                if (confirm(message)) {
+                    window.location.href = `?week=${nextWeek}`;
+                }
+            } else {
+                message += `\n\nYou've completed all available weeks!`;
+                alert(message);
+            }
+        }
+    </script>
+</body>
+</html>
